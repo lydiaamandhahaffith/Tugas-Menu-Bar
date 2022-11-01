@@ -24,6 +24,30 @@ from fkip.views import fkip
 from ft.views import ft
 from pascasarjana.views import pascasarjana
 from profil.views import profil
+from fkip.views import tambah_mahasiswa
+from faperta.views import tambah_mahasiswa
+from feb.views import tambah_mahasiswa
+from fh.views import tambah_mahasiswa
+from fisip.views import tambah_mahasiswa
+from fk.views import tambah_mahasiswa
+from ft.views import tambah_mahasiswa
+from pascasarjana.views import tambah_mahasiswa
+from faperta.views import tambah_dosen
+from feb.views import tambah_dosen
+from fh.views import tambah_dosen
+from fisip.views import tambah_dosen
+from fk.views import tambah_dosen
+from fkip.views import tambah_dosen
+from ft.views import tambah_dosen
+from pascasarjana.views import tambah_dosen
+from faperta.views import tambah_tendik
+from feb.views import tambah_tendik
+from fh.views import tambah_tendik
+from fisip.views import tambah_tendik
+from fk.views import tambah_tendik
+from fkip.views import tambah_tendik
+from ft.views import tambah_tendik
+from pascasarjana.views import tambah_tendik
 from . import views
 
 urlpatterns = [
@@ -38,4 +62,7 @@ urlpatterns = [
     path('pascasarjana/', pascasarjana),
     path('profil/', profil),
     path('', views.index),
+    path('tambah-mahasiswa/', tambah_mahasiswa),
+    path('tambah-dosen/', tambah_dosen),
+    path('tambah-tendik/', tambah_tendik),
 ]
